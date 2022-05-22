@@ -6,6 +6,29 @@
   margin-bottom: -30px;
 }
 
+.portfolio-item-container {
+  background: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateY(0%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+}
+
+.portfolio-item-container-list-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
 .text-inside-portfolio {
   position: absolute;
   top: 0;
@@ -22,13 +45,11 @@
   transition: transform 300ms linear;
 }
 
-.portfolio-item-container-list-wrap {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-item-container:hover .text-inside-portfolio {
-  transform: translateY(0%);
+.portfolio-card {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-item {
@@ -48,25 +69,8 @@
   letter-spacing: 0.03em;
   padding-top: 4px;
 }
-.portfolio-item-container {
-  background: #ffffff;
-  box-sizing: border-box;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// ----в цих класах я не зрозумів, як правильно робити конкатенацію. Коли розкидаю по назві батьківського класу - все ламається і не працює(((----//
 
-  &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-      1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-  }
-}
-.portfolio-card {
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+.portfolio-item-container:hover .text-inside-portfolio {
+  transform: translateY(0%);
 }
