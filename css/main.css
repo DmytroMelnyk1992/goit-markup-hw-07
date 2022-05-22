@@ -399,10 +399,6 @@ h2 {
   fill: #ffffff;
 }
 
-.our-team-member-soc-list-item + .our-team-member-soc-list-item {
-  margin-left: 10px;
-}
-
 .our-clients-container-section {
   display: flex;
 }
@@ -439,12 +435,7 @@ h2 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-clients-container-section-icon:hover {
-  fill: #2196f3;
-}
-
-.our-clients-container-section-link:hover .our-clients-container-section-icon,
-.our-clients-container-section-link:focus .our-clients-container-section-icon {
+.our-clients-container-section-icon:hover, .our-clients-container-section-icon:focus {
   fill: #2196f3;
 }
 
