@@ -76,8 +76,6 @@
   }
 }
 
-// ----в цих класах я не зрозумів, як правильно робити конкатенацію. Коли розкидаю по назві батьківського класу - все ламається і не працює(((----//
-
-// .our-team-member-soc-list-item + .our-team-member-soc-list-item {
-//   margin-left: 10px;
-// }
+.our-team-member-soc-list-item + .our-team-member-soc-list-item {
+  margin-left: 10px;
+}
