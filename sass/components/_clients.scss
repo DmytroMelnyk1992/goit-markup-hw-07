@@ -27,7 +27,9 @@
   &:hover,
   &:focus {
     border: 1px solid #2196f3;
-    fill: #2196f3;
+    .our-clients-container-section-icon {
+      fill: #2196f3;
+    }
   }
 }
 
@@ -36,16 +38,4 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    fill: #2196f3;
-  }
 }
-
-// ----в цих класах я не зрозумів, як правильно робити конкатенацію. Коли розкидаю по назві батьківського класу - все ламається і не працює(((----//
-
-// .our-clients-container-section-link:hover .our-clients-container-section-icon,
-// .our-clients-container-section-link:focus .our-clients-container-section-icon {
-//   fill: #2196f3;
-// }

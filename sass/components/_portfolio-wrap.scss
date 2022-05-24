@@ -21,6 +21,10 @@
       1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
       0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     cursor: pointer;
+
+    .text-inside-portfolio {
+      transform: translateY(0%);
+    }
   }
 }
 
@@ -68,9 +72,4 @@
   line-height: 1.8;
   letter-spacing: 0.03em;
   padding-top: 4px;
-}
-// ----в цих класах я не зрозумів, як правильно робити конкатенацію. Коли розкидаю по назві батьківського класу - все ламається і не працює(((----//
-
-.portfolio-item-container:hover .text-inside-portfolio {
-  transform: translateY(0%);
 }

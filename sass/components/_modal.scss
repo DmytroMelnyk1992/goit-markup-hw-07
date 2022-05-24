@@ -82,10 +82,9 @@
   &:focus {
     border-color: #2196f3;
   }
-}
-
-.modal-input:focus + .input-icon {
-  fill: var(--accent-color);
+  &:focus + .input-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-field {
@@ -165,19 +164,18 @@
   justify-content: center;
 }
 
-// ----в цих класах я не зрозумів, як правильно робити конкатенацію. Коли розкидаю по назві батьківського класу - все ламається і не працює(((----//
+.user-agreement {
+  &:focus + .user-agreement-label span {
+    border-color: var(--button-background-color-1);
+  }
+  &:checked + .user-agreement-label span {
+    background-color: #188ce8;
+    border: none;
+  }
 
-.user-agreement:checked + .user-agreement-label span {
-  background-color: #188ce8;
-  border: none;
-}
-
-.user-agreement:focus + .user-agreement-label span {
-  border-color: var(--button-background-color-1);
-}
-
-.user-agreement:checked + .user-agreement-label .agreement-icon {
-  fill: var(--accent-color);
+  &:checked + .user-agreement-label .agreement-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .submit-button-position {

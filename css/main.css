@@ -120,6 +120,9 @@ h2 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-link:hover, .header-link:focus {
+  color: var(--accent-color);
+}
 
 .current::after {
   content: "";
@@ -134,11 +137,6 @@ h2 {
 
 .header-list-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
 }
 
 .mail-tel {
@@ -430,6 +428,8 @@ h2 {
 }
 .our-clients-container-section-link:hover, .our-clients-container-section-link:focus {
   border: 1px solid #2196f3;
+}
+.our-clients-container-section-link:hover .our-clients-container-section-icon, .our-clients-container-section-link:focus .our-clients-container-section-icon {
   fill: #2196f3;
 }
 
@@ -438,9 +438,6 @@ h2 {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.our-clients-container-section-icon:hover, .our-clients-container-section-icon:focus {
-  fill: #2196f3;
 }
 
 .footer-container {
@@ -699,7 +696,6 @@ h2 {
 .modal-input:focus {
   border-color: #2196f3;
 }
-
 .modal-input:focus + .input-icon {
   fill: var(--accent-color);
 }
@@ -781,15 +777,13 @@ h2 {
   justify-content: center;
 }
 
+.user-agreement:focus + .user-agreement-label span {
+  border-color: var(--button-background-color-1);
+}
 .user-agreement:checked + .user-agreement-label span {
   background-color: #188ce8;
   border: none;
 }
-
-.user-agreement:focus + .user-agreement-label span {
-  border-color: var(--button-background-color-1);
-}
-
 .user-agreement:checked + .user-agreement-label .agreement-icon {
   fill: var(--accent-color);
 }
@@ -875,6 +869,9 @@ h2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
+.portfolio-item-container:hover .text-inside-portfolio {
+  transform: translateY(0%);
+}
 
 .portfolio-item-container-list-wrap {
   position: relative;
@@ -920,8 +917,4 @@ h2 {
   line-height: 1.8;
   letter-spacing: 0.03em;
   padding-top: 4px;
-}
-
-.portfolio-item-container:hover .text-inside-portfolio {
-  transform: translateY(0%);
 }/*# sourceMappingURL=main.css.map */
